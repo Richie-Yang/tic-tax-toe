@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+main {
+  position: relative;
+  width: 450px;
+  height: 100%;
+  margin: 20vh auto;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+h2#current-turn {
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  width: 150px;
+  height: 150px;
+	font-size:80px;
+	color: black;
+  background-color: aliceblue;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+#box-0-0, #box-1-0 {
+  border-right: 12px solid grey;
+  border-bottom: 12px solid grey;
+}
+
+#box-0-1, #box-1-1 {
+  border-right: 12px solid grey;
+  border-bottom: 12px solid grey;
+}
+
+#box-0-2, #box-1-2 {
+  border-bottom: 12px solid grey;
+}
+
+#box-2-0, #box-2-1 {
+  border-right: 12px solid grey;
+}
+
+p#clear-button {
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: grey;
+  border: 2px solid grey;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+p#clear-button:hover {
+  color: black;
+  background-color: white;
+}
+
+div#mode-button {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: grey;
+  border: 2px solid grey;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+div#mode-button:hover {
+  color: black;
+  background-color: white;
+}
+
+div.spinner-border {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 350px;
+  height: 350px;
+  font-size: 100px;
+  opacity: 0.3;
+}
+
+div#winning-stroke {
+  display: none;
+  position: absolute;
+/*   top: 430px;
+  left: 0px;
+  transform: rotate(180deg);
+  width: 450px; */
+/*   width: 550px; */
+  height: 15px;
+  background-color: black;
+  border-radius: 15%;
+}
